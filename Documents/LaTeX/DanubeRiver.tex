@@ -1,0 +1,96 @@
+%%  ************    LibreSilicon's DanubeRiver      *******************
+%%
+%%  Organisation:   Chipforge
+%%                  Germany / European Union
+%%
+%%  Profile:        Chipforge focus on fine System-on-Chip Cores in
+%%                  Verilog HDL Code which are easy understandable and
+%%                  adjustable. For further information see
+%%                          www.chipforge.org
+%%                  there are projects from small cores up to PCBs, too.
+%%
+%%  File:           DanubeRiver/Documents/LaTeX/DanubeRiver.tex
+%%
+%%  Purpose:        Top Level File for 2nd LibreSilicon Test Chip Documentation
+%%
+%%  ************    LaTeX with circdia.sty package      ***************
+%%
+%%  ///////////////////////////////////////////////////////////////////
+%%
+%%  Copyright (c) 2021 by
+%%                  chipforge <hsank@nospam.chipforge.org>
+%%  All rights reserved.
+%%
+%%      This Test Chip Project is licensed under the Libre Silicon
+%%      public license; you can redistribute it and/or modify it under
+%%      the terms of the Libre Silicon public license as published by
+%%      the Libre Silicon alliance, either version 1 of the License, or
+%%      (at your option) any later version.
+%%
+%%      This design is distributed in the hope that it will be useful,
+%%      but WITHOUT ANY WARRANTY; without even the implied warranty of
+%%      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+%%      See the Libre Silicon Public License for more details.
+%%
+%%  ///////////////////////////////////////////////////////////////////
+\documentclass[10pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[digital,srcmeas,semicon]{circdia}
+% \usepackage[dvipsnames]{xcolor}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\title{LibreSilicon's Danube River Test Chip}
+\author{chipforge \texttt{<danuberiver@nospam.chipforge.org>}}
+\date{\today}
+
+\makeindex  % usefull for ToC
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\begin{quote}
+Copyright \textcopyright  2021 CHIPFORGE. All rights reserved.
+
+This project is licensed under the Libre Silicon public license; you can redistribute it and/or modify it under the terms of the Libre Silicon public license as published by the Libre Silicon alliance either version 2 of the License, or (at your option) any later version.
+
+This design is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the Libre Silicon Public License for more details.
+
+For further clarification consult the complete documentation of the process.
+\end{quote}
+\end{abstract}
+
+DanubeRiver is the second Test Chip Project from LibreSilicon.org.
+
+
+This Test Chip contains almost all test structures to evaulate and qualify the technology-depended parameters.
+On Wafer are placed structures to measure the sheet-resistance of all Poly and Metal Layer, as well Capacitors, and NMOS / PMOS Transistors.
+
+\clearpage
+\tableofcontents
+%\clearpage
+
+%%  -------------------------------------------------------------------
+%%                  PART I
+%%  -------------------------------------------------------------------
+
+\input{part-i_informal}
+
+%%  -------------------------------------------------------------------
+%%                  PART II
+%%  -------------------------------------------------------------------
+
+\input{part-ii_main}
+
+%%  -------------------------------------------------------------------
+%%                  PART III
+%%  -------------------------------------------------------------------
+
+\input{part-iii_appendix}
+
+\end{document}
